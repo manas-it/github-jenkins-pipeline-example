@@ -6,7 +6,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'nodejs --version'
                 sh 'npm install'
                 sh 'gulp lint'
             }
